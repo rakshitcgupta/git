@@ -1,0 +1,14 @@
+service "counting" {
+	policy = "write"
+  intentions = "write"
+}
+service "counting-sidecar-proxy" {
+	policy = "write"
+  intentions = "write"
+}
+service_prefix "" {
+	policy = "read"
+}
+node_prefix "" {
+	policy = "read"
+}
